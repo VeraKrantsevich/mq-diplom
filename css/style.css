@@ -52,17 +52,21 @@ a {
 }
 
 .navbar {
-  width: 1170px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   width: 180px;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger, .burger-menu {
+  display: none;
 }
 
 .menu-item {
@@ -87,9 +91,30 @@ a {
   cursor: pointer;
 }
 
+.trends-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "OpenSans";
+}
+
+.trends-title::after {
+  content: '';
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 0.4;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: block;
+}
+
 .trends {
   display: flex;
-  margin-top: 120px;
 }
 
 .trends-card {
@@ -164,11 +189,6 @@ a {
 
 .title {
   margin: 0 auto;
-  margin-top: 100px;
-  width: 690px;
-  min-height: 275px;
-  font-size: 45px;
-  line-height: 75px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
@@ -226,7 +246,6 @@ a {
   font-weight: 700;
   font-family: "OpenSans";
 }
-
 
 .trend-name {
   font-size: 20px;
@@ -550,6 +569,27 @@ a {
   font-family: "OpenSans";
 }
 
+.shop-title {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "OpenSans";
+}
+
+.shop-title::after {
+  content: '';
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 0.4;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: block;
+}
+
 .shop {
   display: flex;
 }
@@ -714,4 +754,130 @@ a {
   color: #999999;
   font-weight: 700;
   font-family: "OpenSans";
+}
+
+@media (min-width: 1200px) {
+  .title {
+    margin-top: 100px;
+    width: 690px;
+    min-height: 275px;
+    font-size: 45px;
+    line-height: 75px;
+  }
+
+  .navbar {
+    width: 1170px;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+
+}
+
+@media (max-width: 640px) {
+  .trends {
+    width: 100%;
+    display: block;
+  }
+
+  .trends-card {
+    width: 90%;
+  }
+
+  .trends-card:nth-child(n+2) {
+    margin-left: 0;
+  }
+
+  .trend-name {
+    font-size: 16px;
+  }
+
+  .shop {
+    flex-direction: column;
+  }
+
+  .shop-card {
+    width: 100%;
+    margin-left: 4.5%;
+  }
+
+  .shop-card:nth-child(n+2) {
+    margin-left: 4.5%;
+  }
+
+  .header {
+    width: 90%;
+    min-height: 510px;
+    background-image: url(../images/banner-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    margin-top: 45px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .navbar {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+    margin-top: 50%;
+  }
+
+  .burger-check {
+    display: none;
+  }
+
+  .burger-menu {
+    width: 30px;
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    color: #f4f7f6;
+    font-size: 30px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post {
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .post-content {
+    width: 90%;
+  }
+
+  .post-categories {
+    margin-top: 20px;
+  }
+
+  .post-name {
+    width: 90%;
+  }
+
+  .container-content {
+    flex-direction: column;
+  }
+
+  .articles-socials {
+    margin-top: 0;
+  }
 }
