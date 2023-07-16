@@ -18,7 +18,10 @@
                 alt="Логотип"
               />
             </a>
-            <nav class="menu">
+            <div class="menu-container">
+              <input type="checkbox" class="burger-check" id="burger">
+              <label class="burger-menu" for="burger">☰</label>
+              <nav class="menu">
               <a class="menu-item" href="#logo">Главная</a>
               <a class="menu-item" href="#0">Посты</a>
               <a class="menu-item" href="#0">Статьи</a>
@@ -26,11 +29,13 @@
               <a class="menu-item" href="#0">Темы</a>
               <a class="menu-item" href="#0">Контакты</a>
             </nav>
+            </div>
           </div>
           <h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
       </div>
     </header>
+    <h2 class="trends-title">Сейчас в тренде</h2>
     <div class="trends">
       <div class="trends-card trend1">
         <div class="post-header trend-header">
@@ -86,7 +91,7 @@
     </div>
     <div class="container-center">
       <div class="container-content">
-        <main>
+        <main class="main-container">
           <section class="post">
             <img
               class="post-image"
@@ -471,6 +476,7 @@
           </div>
         </aside>
       </div>
+      <h2 class="shop-title">Наши изделия</h2>
       <div class="shop">
         <div class="shop-card">
           <div class="img shop-img1"></div>
