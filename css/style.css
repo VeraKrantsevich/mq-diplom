@@ -780,7 +780,7 @@ a {
 @media (min-width: 641px) and (max-width: 1200px) {
 
   .header {
-    max-width: 775px;
+    min-width: 775px;
     min-height: 400px;
     background-image: url(../images/banner-bg-tablet.jpg);
   }
@@ -802,10 +802,17 @@ a {
 
   .menu {
     display: none;
+    position: fixed;
+    top: 65px;
+    right: 30px;
   }
 
   .burger-check {
     display: none;
+  }
+
+  .burger-check:checked + .burger-menu + .menu {
+    display: block;
   }
 
   .burger-menu {
@@ -820,22 +827,6 @@ a {
     z-index: 2;
   }
 
-  .trends {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  
-  .trends-card {
-    width: calc(50% - 45px);
-    min-height: 245px;
-  } 
-
-  .trends-card:nth-child(n+2) {
-    width: calc(50% - 45px);
-    margin-left: 0;
-  }
-  
   .trend-name {
     font-size: 16px;
   }
@@ -880,6 +871,26 @@ a {
   }
 }
 
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+
+  .trends {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .trends-card {
+    width: calc(50% - 45px);
+    min-height: 245px;
+  } 
+
+  .trends-card:nth-child(n+2) {
+    width: calc(50% - 45px);
+    margin-left: 0;
+  }
+}
+
+
 @media (max-width: 640px) {
   .trends {
     width: 100%;
@@ -914,11 +925,10 @@ a {
   }
 
   .header {
-    width: 90%;
+    width: 100%;
     min-height: 510px;
     margin: 0 auto;
     background-image: url(../images/banner-mobile.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
   }
 
@@ -932,15 +942,30 @@ a {
     padding-left: 15%;
     padding-right: 15%;
   }
-  
-  .menu {
-    display: none;
+
+  .burger-check:checked + .burger-menu + .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
+
+  .menu-item:nth-child(n+1) {
+    margin-top: 10%;
+  }
+
+.menu-item:first-child {
+  margin-right: -30px;
+  } 
+  
+.menu {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 60px;
+}
 
   .logo {
     position: absolute;
-    top: 35%;
-    left: 20%;
   }
 
   .burger-check {
@@ -992,5 +1017,56 @@ a {
 
   .articles-socials {
     margin-top: 0;
+  }
+}
+
+
+@media (max-width: 640px) and (orientation: portrait) {
+
+  .logo {
+    top: 35%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+
+  .header {
+    min-height: 0;
+  }
+
+  .title { 
+    min-height: 200px;
+    margin-top: 25%;
+  }
+
+  .menu-item:nth-child(n+1) {
+    margin-top: 5%;
+  }
+
+  .trends {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  
+  .trends-card {
+    width: calc(50% - 50px);
+    min-height: 245px;
+    margin: 0;
+  } 
+
+  .trends-card:nth-child(n+2) {
+    width: calc(50% - 50px);
+    margin: 0;
+  }
+
+  .trend-header {
+    padding: 15%;
+  }
+
+  .sidebar {
+    margin: 0 auto;
   }
 }
