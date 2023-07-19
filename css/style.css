@@ -147,18 +147,22 @@ a {
 
 .trend1 {
   background-image: url(../images/trend1.jpg);
+  z-index: -1;
 }
 
 .trend2 {
   background-image: url(../images/trend2.jpg);
+  z-index: -1;
 }
 
 .trend3 {
   background-image: url(../images/trend3.jpg);
+  z-index: -1;
 }
 
 .trend4 {
   background-image: url(../images/trend4.jpg);
+  z-index: -1;
 }
 
 .trend-header {
@@ -756,7 +760,7 @@ a {
   font-family: "OpenSans";
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .title {
     margin-top: 100px;
     width: 690px;
@@ -773,8 +777,107 @@ a {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 1200px) {
 
+  .header {
+    max-width: 775px;
+    min-height: 400px;
+    background-image: url(../images/banner-bg-tablet.jpg);
+  }
+
+  .title {
+    margin-top: 100px;
+    width: 690px;
+    min-height: 275px;
+    font-size: 45px;
+    line-height: 75px;
+  }
+
+  .navbar {
+    width: calc(100% - 30px);
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .burger-check {
+    display: none;
+  }
+
+  .burger-menu {
+    width: 30px;
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    color: #f4f7f6;
+    font-size: 30px;
+    z-index: 2;
+  }
+
+  .trends {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .trends-card {
+    width: calc(50% - 45px);
+    min-height: 245px;
+  } 
+
+  .trends-card:nth-child(n+2) {
+    width: calc(50% - 45px);
+    margin-left: 0;
+  }
+  
+  .trend-name {
+    font-size: 16px;
+  }
+
+  .post {
+    max-width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .post-content {
+    width: 90%;
+  }
+  
+  .post-categories {
+    margin-top: 20px;
+  }
+  
+  .post-name {
+    width: 90%;
+  }
+
+  .sidebar {
+    margin-left: 0;
+}
+
+.shop {
+  flex-wrap: wrap;
+}
+
+  .shop-card {
+    width: calc(50% - 15%);
+    margin-left: 5%;
+}
+
+.shop-card:nth-child(n+2) {
+    margin-left: 4.5%;
+  }
+
+  .different-content {
+    padding-top: 51px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -820,7 +923,7 @@ a {
   }
 
   .title {
-    margin-top: 45px;
+    margin-top: 80%;
     font-size: 26px;
     line-height: 36px;
   }
@@ -835,8 +938,9 @@ a {
   }
 
   .logo {
-    margin: 0 auto;
-    margin-top: 50%;
+    position: absolute;
+    top: 35%;
+    left: 20%;
   }
 
   .burger-check {
