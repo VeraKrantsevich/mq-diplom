@@ -1,3 +1,7 @@
+:root {
+  --sidebar-margin: calc(100% - 275px);
+}
+
 body, div, section, h1, h2, h3, p, ul {
   margin: 0;
 }
@@ -73,11 +77,12 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 400;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   text-align: center;
+  margin-left: 15px;
 }
 
-.menu-item:nth-child(n+1) {
+.menu-main {
   margin-left: 32px;
 }
 
@@ -98,7 +103,7 @@ a {
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .trends-title::after {
@@ -140,7 +145,15 @@ a {
   z-index: -1;
 }
 
-.trends-card:nth-child(n+2) {
+.trend2 {
+  margin-left: 5px;
+}
+
+.trend3 {
+  margin-left: 5px;
+}
+
+.trend4 {
   margin-left: 5px;
 }
 
@@ -195,7 +208,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   font-style: normal;
   text-align: center;
 }
@@ -219,7 +232,7 @@ a {
   margin-left: 25px;
 }
 
-.post:nth-child(n+1) {
+.post {
   margin-top: 60px;
 }
 
@@ -229,7 +242,7 @@ a {
   text-transform: uppercase;
   color: #b59f5b;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .post-category:last-child {
@@ -247,7 +260,7 @@ a {
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .trend-name {
@@ -267,7 +280,7 @@ a {
 .post-time {
   color: #888888;
   font-weight: 400;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .post-author {
@@ -276,7 +289,7 @@ a {
   font-size: 12px;
   color: #000000;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .post-content {
@@ -285,10 +298,10 @@ a {
   line-height: 22px;
   color: #0f0d0e;
   font-weight: 400;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
-.post-content-part:nth-child(n+1) {
+.post-content-part {
   margin-top: 10px;
 }
 
@@ -314,7 +327,7 @@ a {
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .new-posts-title::after {
@@ -328,7 +341,7 @@ a {
   display: block;
 }
 
-.new-post:nth-child(n+1) {
+.new-post {
   margin-top: 23px;
 }
 
@@ -338,7 +351,7 @@ a {
   text-transform: uppercase;
   color: #000000;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .new-post-content {
@@ -352,7 +365,7 @@ a {
   display: block;
   color: #888888;
   font-weight: 400;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .new-post-image {
@@ -373,7 +386,7 @@ a {
   font-size: 13px;
   color: #000000;
   font-weight: 400;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -405,7 +418,7 @@ a {
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .malling-list-title::after {
@@ -431,7 +444,7 @@ a {
   font-size: 13px;
   color: #000000;
   font-weight: 400;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .malling-field:focus {
@@ -447,7 +460,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .malling-button {
@@ -472,7 +485,7 @@ a {
   font-size: 14px;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .tags-title::after {
@@ -502,7 +515,7 @@ a {
   color: #000000;
   text-decoration: none;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .tag:hover {
@@ -521,7 +534,7 @@ a {
   background-color: #8f8c8c;
 }
 
-.tag-list-item:nth-child(n+1) {
+.tag-list-item {
   margin-right: 5px;
 }
 
@@ -532,7 +545,7 @@ a {
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .topics-title::after {
@@ -553,7 +566,7 @@ a {
   color: #000000;
   font-size: 14px;
   line-height: 40px;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .topics-list-item {
@@ -569,7 +582,7 @@ a {
   vertical-align: super;
   color: #b59f5b;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .shop-title {
@@ -579,7 +592,7 @@ a {
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .shop-title::after {
@@ -605,7 +618,11 @@ a {
   justify-content: space-between;
 }
 
-.shop-card:nth-child(n+2) {
+.shop2 {
+  margin-left: 50px;
+}
+
+.shop3 {
   margin-left: 50px;
 }
 
@@ -736,7 +753,27 @@ a {
   position: absolute;
 }
 
-.socials-link-dribbble::after, .socials-link-pinterest::after, .socials-link-tumblr::after {
+.socials-link-dribbble::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  background-color: transparent;
+}
+
+.socials-link-pinterest::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  background-color: transparent;
+}
+
+.socials-link-tumblr::after {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -757,7 +794,7 @@ a {
   font-size: 12px;
   color: #999999;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .popup-container {
@@ -810,7 +847,7 @@ a {
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
 }
 
 .popup-title::after {
@@ -838,15 +875,19 @@ a {
   color: rgb(235, 202, 120);
 }
 
-.form-row:first-child {
+.form-popup1 {
   vertical-align: middle;
 }
 
-.form-row:nth-child(n+2) {
+.form-popup2 {
+  margin-top: 35px;
+} 
+
+.form-popup3 {
   margin-top: 35px;
 }
 
-.form-row:last-child {
+.form-popup4 {
   margin-top: 25px;
 }
 
@@ -879,7 +920,7 @@ a {
   display: none;
 }
 
-.radio-group-text:nth-child(n+1) {
+.radio-group-text {
   margin-left: 15px;
 }
 
@@ -950,7 +991,7 @@ a {
 @media (min-width: 641px) and (max-width: 1200px) {
 
   .header {
-    min-width: 775px;
+    min-width: 700px;
     min-height: 400px;
     background-image: url(../images/banner-bg-tablet.jpg);
   }
@@ -1002,21 +1043,14 @@ a {
   }
 
   .post {
-    max-width: 90%;
+    max-width: calc(100% - 30px);
     flex-direction: column;
     margin: 0 auto;
-  }
-  
-  .post-content {
-    width: 90%;
+    margin-top: 60px;
   }
   
   .post-categories {
     margin-top: 20px;
-  }
-  
-  .post-name {
-    width: 90%;
   }
 
   .post-image {
@@ -1025,26 +1059,39 @@ a {
     margin-left: 25px;
   }
   
+  .post-name {
+    font-size: 17px;
+  }
 
   .sidebar {
     margin-left: 0;
+    margin-right: 50px;
   }
 
-.shop {
+  .shop {
   flex-wrap: wrap;
   }
 
   .shop-card {
-    width: calc(50% - 15%);
-    margin-left: 5%;
+    margin-left: 25px;
   }
 
-.shop-card:nth-child(n+2) {
-    margin-left: 4.5%;
+  .shop2 {
+    margin-left: 60px;
   }
 
   .different-content {
     padding-top: 51px;
+  }
+
+  .main-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .shop2 {
+      margin-left: 80px;
   }
 }
 
@@ -1054,6 +1101,7 @@ a {
     width: 100%;
     flex-wrap: wrap;
     gap: 5px;
+    justify-content: space-evenly
   }
   
   .trends-card {
@@ -1061,11 +1109,38 @@ a {
     min-height: 245px;
   } 
 
-  .trends-card:nth-child(n+2) {
+  .trend2 {
     width: calc(50% - 45px);
     margin-left: 0;
   }
+
+  .trend3 {
+    width: calc(50% - 45px);
+    margin-left: 0;
+  }
+
+  .trend4 {
+    width: calc(50% - 45px);
+    margin-left: 0;
+  }
+
+  
+  .shop-card {
+    width: calc(50% - 100px);
+  }
 }
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .shop {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .shop2 {
+    margin-left: 0;
+    margin-left: auto;
+  }
+} 
 
 
 @media (max-width: 640px) {
@@ -1075,12 +1150,8 @@ a {
   }
 
   .trends-card {
-    width: 80%;
-    margin: 0 auto;
-  } 
-
-  .trends-card:nth-child(n+2) {
-    width: 80%;
+    width: calc(100% - 40px);
+    min-height: 200px;  
     margin: 0 auto;
   }
 
@@ -1094,12 +1165,8 @@ a {
 
   .shop-card {
     width: 75%;
-    margin-left: 5%;
+    margin: 0 auto;
 }
-
-  .shop-card:nth-child(n+2) {
-    margin-left: 4.5%;
-  }
 
   .header {
     width: 100%;
@@ -1110,14 +1177,9 @@ a {
   }
 
   .title {
-    margin-top: 80%;
+    margin-top: 230px;
     font-size: 26px;
     line-height: 36px;
-  }
-
-  .navbar {
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   .burger-check:checked + .burger-menu + .menu {
@@ -1126,12 +1188,12 @@ a {
     flex-direction: column;
   }
 
-  .menu-item:nth-child(n+1) {
-    margin-top: 10%;
+  .menu-item {
+    margin-top: 5px;
   }
 
   .menu-item:first-child {
-  margin-right: -30px;
+  margin-right: -15px;
   } 
   
   .menu {
@@ -1167,13 +1229,14 @@ a {
   }
 
   .post {
-    max-width: 90%;
+    max-width: calc(100% - 30px);
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 60px;
   }
 
   .post-content {
-    width: 90%;
+    width: calc(100% - 10px);
   }
 
   .post-categories {
@@ -1181,19 +1244,37 @@ a {
   }
 
   .post-name {
-    width: 90%;
+    width: calc(100% - 10px);
   }
 
   .container-content {
     flex-direction: column;
   }
 
-  .sidebar {
-    margin-left: 4.5%;
-  }
-
   .articles-socials {
     margin-top: 0;
+  }
+
+  .trend-header {
+    padding: 15px;
+  }
+
+  .sidebar {
+    margin-left: calc(var(--sidebar-margin) / 2);
+  }
+  
+  .tags-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .tag-list-item {
+    display: grid;
+  }
+
+  .tag {
+    padding: 4px 4px;
+    font-size: 12px;
   }
 }
 
@@ -1206,7 +1287,7 @@ a {
   }
 
   .popup-content {
-    width: 90%;
+    width: calc(100% - 50px);
     height: 85vh;
     padding-top: 15px;
   }
@@ -1215,23 +1296,39 @@ a {
     font-size: 14px;
   }
 
-  .popup-title::after {
-    margin-bottom: 15px;
-  }
-
   .popup-close {
     right: 0px;
     top: -35px;
     font-weight: 700;
   }
 
-  .form-row:nth-child(n+2) {
+  .form-popup2 {
     margin-top: 15px;
   }
 
+  .form-popup3 {
+    margin-top: 15px;
+  }
+
+  .form-popup4 {
+    margin-top: 15px;
+  }
+
+  .form-hint {
+    margin-bottom: 8px;
+  }
+
   .form-field {
-    min-height: 100%;
-    max-height: 80px;
+    min-height: 60px;
+    max-height: 90px;
+  }
+
+  .radio-group-text {
+    font-size: 13px;
+  }
+
+  .popup-select {
+    height: 39px;
   }
 }
 
@@ -1243,18 +1340,23 @@ a {
 
   .title { 
     min-height: 200px;
-    margin-top: 25%;
+    margin-top: 25vw;
   }
 
-  .menu-item:nth-child(n+1) {
-    margin-top: 5%;
+  .menu-item {
+    margin-top: 5px;
   }
+
+.logo {
+  left: 40px;
+}
 
   .trends {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
+    justify-content: center;
   }
   
   .trends-card {
@@ -1263,13 +1365,9 @@ a {
     margin: 0;
   } 
 
-  .trends-card:nth-child(n+2) {
+  .trend2, .trend3, .trend4 {
     width: calc(50% - 50px);
     margin: 0;
-  }
-
-  .trend-header {
-    padding: 15%;
   }
 
   .sidebar {
@@ -1280,7 +1378,16 @@ a {
     width: 50%;
     height: 90vh;
   }
-  .form-row:nth-child(n+2) {
+
+  .form-popup2 {
+    display: none;
+  }
+  
+  .form-popup3 {
+    display: none;
+  }
+
+  .form-popup4 {
     display: none;
   }
 
