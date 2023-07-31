@@ -22,7 +22,7 @@
               <input type="checkbox" class="burger-check" id="burger">
               <label class="burger-menu" for="burger">☰</label>
               <nav class="menu">
-              <a class="menu-item" href="#logo">Главная</a>
+              <a class="menu-item menu-main" href="#logo">Главная</a>
               <a class="menu-item" href="#0">Посты</a>
               <a class="menu-item" href="#0">Статьи</a>
               <a class="menu-item" href="#0">Теги</a>
@@ -248,67 +248,6 @@
               </div>
             </article>
           </section>
-          <!-- <section class="post">
-            <img
-              class="post-image"
-              src="images/last-post6.jpg"
-              alt="Туристы в горах смотрят на шикарный вид"
-            />
-            <article class="post-box">
-              <div class="post-header">
-                <ul class="post-categories">
-                  <li><a href="#0" class="post-category">travel</a></li>
-                  <li><a href="#0" class="post-category">lifestyle</a></li>
-                </ul>
-                <h2 class="post-name">
-                  <a href="#">Как первый раз отправиться в горы?</a>
-                </h2>
-              </div>
-              <div class="post-info">
-                <time class="post-time" datetime="2019-06-10"
-                  >10 июня 2019</time
-                >
-                <h3 class="post-author">Неизвестный автор</h3>
-              </div>
-              <div class="post-content">
-                <p class="post-content-part">
-                  Для начала нужно определиться, в каком формате пройдёт ваше
-                  путешествие. Это зависит от многих факторов, не только от
-                  ваших желаний и интересов.
-                </p>
-              </div>
-            </article>
-          </section>
-          <section class="post">
-            <img
-              class="post-image"
-              src="images/last-post4.jpg"
-              alt="Засервированный стол"
-            />
-            <article class="post-box">
-              <div class="post-header">
-                <ul class="post-categories">
-                  <li><a href="#0" class="post-category">LIFESTYLE</a></li>
-                  <li><a href="#0" class="post-category">FOOD</a></li>
-                </ul>
-                <h2 class="post-name">
-                  <a href="#">Наукоёмкий подход к кулинарии</a>
-                </h2>
-              </div>
-              <div class="post-info">
-                <time class="post-time" datetime="2019-06-10"
-                  >10 июня 2019</time
-                >
-                <h3 class="post-author">Неизвестный автор</h3>
-              </div>
-              <div class="post-content">
-                <p class="post-content-part">
-                  Узнаем основы проектирования новых пищевых и около-пищевых
-                  опытов, вскроем физику, химию и микробиологию еды.
-                </p>
-              </div>
-            </article>
-          </section> -->
         </main>
         <aside class="sidebar">
           <div class="new-posts">
@@ -412,10 +351,52 @@
                     required
                   />
                 </label>
-                <button class="btn malling-button">
-                  Подписаться<span hidden>Подписаться</span>
+                <button class="btn malling-button"><label for="popup1" >
+                  Подписаться<span hidden>Подписаться</span></label></button>
                 </button>
               </form>
+            </div>
+          </div>
+          <div class="popup-container">
+            <div class="box"></div>
+            <input type="checkbox" id="popup1" class="popup-toggle">
+            <div class="popup">
+              <label for="popup1" class="popup-close-bg"></label>
+              <div class="popup-content">
+                  <label for="popup1" class="popup-close"><span hidden>Закрыть</span>&times;</label>
+                  <h2 class="popup-title">Ваш фидбек</h2>
+                  <form class="form">
+                    <div class="form-row form-popup1">
+                      <label class="form-group">
+                        <span class="form-hint">Как часто вы заходите на сайт</span>
+                        <select class="popup-select">
+                          <option>2-3 раза в неделю</option>
+                          <option selected>Почти каждый день</option>
+                          <option>1-2 раза в неделю</option>
+                          <option>Реже, чем раз в неделю</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="form-row form-popup2">
+                      <span class="form-hint">Вы подписаны на e-mail-рассылку?</span>
+                      <label class="radio-group">
+                        <input type="radio" name="radio-group" class="radio-group-control" checked>
+                        <span class="radio-group-text" selected>Да</span>
+                      </label>
+                      <label class="radio-group">
+                        <input type="radio" name="radio-group" class="radio-group-control" checked>
+                        <span class="radio-group-text">Нет</span>
+                      </label>
+                    </div>
+                    <div class="form-row form-popup3">
+                      <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                      <textarea class="form-field" placeholder="Может, больше рецептов?"></textarea>
+                    </div>  
+                    <div class="form-row form-popup4">
+                      <button class="btn popup-button">Отправить</button>
+                    </div>
+                  </form>
+              </div>
             </div>
           </div>
           <div class="tags-container">
@@ -478,7 +459,7 @@
       </div>
       <h2 class="shop-title">Наши изделия</h2>
       <div class="shop">
-        <div class="shop-card">
+        <div class="shop-card shop1">
           <div class="img shop-img1"></div>
           <div class="shop-content different-content">
               <h2 class="post-name">
@@ -496,7 +477,7 @@
               </div>
           </div>
         </div>
-        <div class="shop-card">
+        <div class="shop-card shop2">
           <div class="img shop-img2"></div>
           <div class="shop-content">
               <h2 class="post-name">
@@ -513,7 +494,7 @@
               </div>
           </div>
         </div>
-        <div class="shop-card">
+        <div class="shop-card shop3">
           <div class="img shop-img3"></div>
           <div class="shop-content">
               <h2 class="post-name">
